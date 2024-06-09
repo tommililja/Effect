@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Effects.fs" />
+        <Compile Include="EffectsHandler.fs" />
+        <Compile Include="Handlers.fs" />
+        <Compile Include="Endpoints.fs" />
+        <Compile Include="App.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="8.0.300" />
+      <PackageReference Include="NodaTime" Version="3.1.11" />
+      <PackageReference Include="Oxpecker" Version="0.10.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Effects.Monad\Effects.Monad.fsproj" />
+    </ItemGroup>
+
+</Project>

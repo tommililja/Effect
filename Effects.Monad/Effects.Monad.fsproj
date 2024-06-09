@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Async.fs" />
+        <Compile Include="AsyncResult.fs" />
+        <Compile Include="AsyncResultBuilder.fs" />
+        <Compile Include="Effect.fs" />
+        <Compile Include="EffectBuilder.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="8.0.300" />
+    </ItemGroup>
+
+</Project>
